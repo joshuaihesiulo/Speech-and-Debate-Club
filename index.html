@@ -4,22 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Gowun Batang"', 'Georgia', 'serif'],
+                        sans: ['system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: '#fdfcf8',
+                        beige: '#f5f1e8',
+                        charcoal: '#4a4a4a',
+                        'dark-text': '#1a1a1a',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-white text-gray-900">
+<body class="font-sans bg-white text-gray-900">
     
    <nav class="sticky top-0 z-50 bg-white border-b-2 border-gray-200">
    
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-start justify-start gap-15 -ml-3">
-   <a href="#" class="bloxk py-2 text-gray-900">Home</a>
-   <a href="#" class="bloxk py-2 text-gray-900">News</a>
-   <a href="#" class="bloxk py-2 text-gray-900">Details</a>
-   <a href="#" class="bloxk py-2 text-gray-900">Contact</a>
+   <a href="#" class="block py-2 text-gray-900">Home</a>
+   <a href="#" class="block py-2 text-gray-900">News</a>
+   <a href="#" class="block py-2 text-gray-900">Details</a>
+   <a href="#" class="block py-2 text-gray-900">Contact</a>
    </div>
 
    </nav>
 
-   
+   <section class="hero flex flex-col gap-24">
+    
+    <div class="annoucement-badge text-sm bg-[#FFF8EC] py-3 px-3 font-semibold w-full rounded-lg  left-7 flex flex-row justify-between">
+     <p>Announcement: Spring ASB Election is now live for voting!</p>
+     <a href="#" class=" left-215 border-b-2 font-semibold">Survey Here</a>
+    </div>
+
+    <div class="hero-content flex flex-col justify-center items-center leading-20px gap-24">
+     <h3 class="  font-light">Committed to all students in need</h3>
+     <h1 class="text-6xl  top-60  font-light">Lincoln High School Speech and <br><span class="flex justify-center items-center">Debate Club</span></h1>
+     <a href="#" class=" border-b-2 text-xs font-semibold">Join Us</a>
+    </div>
+
+    <div>
+    <img class="w-full" src="https://plus.unsplash.com/premium_photo-1681488394409-5614ef55488c?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+    </section>
 
 
 </body>
